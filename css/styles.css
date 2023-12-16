@@ -986,19 +986,17 @@ textarea::placeholder {
     fill: rgba(255, 255, 255, 1);
     width: 20px;
     height: 20px;
-    /* transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .social a:hover,
-/* .social a:hover svg, */
 .social a:focus {
-/* .social a:focus svg { */
     background-color: var(--brand-color);
-    /* fill: var(--background-color); */
 }
 
+.fotter-contacts-list {
+    text-wrap: nowrap;
+
+}
 
 .fotter-contacts-list-item {
     margin-bottom: 9px;
@@ -1058,10 +1056,30 @@ margin-bottom: 20px;
     width: 100%;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(33, 150, 243, 0.00);
+    /* background: rgba(33, 150, 243, 0.00); */
+    background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 13px 16px;
+    cursor: pointer;
+    outline: transparent;
+    color: var(--background-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
 }
+
+.cubmission-email:hover,
+.cubmission-email:focus {
+    border-color: var(--brand-color);
+}
+
+.cubmission-email:focus-visible {
+    border-color: var(--brand-color)
+}
+
 
 .cubmission-email::placeholder {
     color: rgba(255, 255, 255, 0.60);
@@ -1091,8 +1109,7 @@ margin-bottom: 20px;
     align-items: center;
     gap: 10px;
     padding: 10px 28px;
-
-    
+    cursor: pointer;  
 }
 
 .cubmission-form svg 

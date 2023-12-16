@@ -1025,17 +1025,21 @@ textarea::placeholder {
 }
 
 .cubmission-form {
-    margin-left: 93px;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
 }
 
 .cubmission-input {
     display: flex;
-    align-items: center;
-
+    flex-direction: column;
+    width: 100%;
+    margin-left: 93px;
 }
 
 
-.cubmission-form p
+.cubmission-text
 {color: var(--background-color);
 font-size: 14px;
 font-weight: 700;

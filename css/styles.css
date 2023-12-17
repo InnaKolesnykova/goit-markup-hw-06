@@ -267,6 +267,13 @@ a.nav-header-link
     padding: 10px 32px;
 }
 
+.btn:active {
+    background-color: var(--brand-color);
+}
+
+
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -408,6 +415,7 @@ a.nav-header-link
     resize: none;
     height: 96px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .user-comment:hover {
@@ -490,6 +498,7 @@ textarea::placeholder {
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .form-btn {
@@ -508,10 +517,16 @@ textarea::placeholder {
     background: var(--brand-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 
-
+.form-btn:hover,
+.form-btn:focus,
+.btn:hover,
+.btn:focus {
+    background-color: #188ce8;
+}
 
 
 
@@ -1029,28 +1044,27 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 0.60);
 }
 
-.cubmission-form {
+.submission-form {
     display: flex;
     gap: 12px;
     width: 100%;
     align-items: center;
-    
 }
 
-.cubmission-input {
+.submission-input {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 93px;
 }
 
-.cubmission-label {
+.submission-label {
     width: 100%;
 }
 
 
 
-.cubmission-text
+.submission-text
 {color: var(--background-color);
 font-size: 14px;
 font-weight: 700;
@@ -1059,13 +1073,13 @@ text-transform: uppercase;
 margin-bottom: 20px;
 }
 
-.cubmission-email {
+.submission-email {
     width: 100%;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     /* background: rgba(33, 150, 243, 0.00); */
     background-color: transparent;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
     padding: 13px 16px;
     cursor: pointer;
     outline: transparent;
@@ -1078,17 +1092,17 @@ margin-bottom: 20px;
     letter-spacing: 0.48px;
 }
 
-.cubmission-email:hover,
-.cubmission-email:focus {
+.submission-email:hover,
+.submission-email:focus {
     border-color: var(--brand-color);
 }
 
-.cubmission-email:focus-visible {
+.submission-email:focus-visible {
     border-color: var(--brand-color)
 }
 
 
-.cubmission-email::placeholder {
+.submission-email::placeholder {
     color: rgba(255, 255, 255, 0.60);
     font-family: var(--main-font);
     font-size: 16px;
@@ -1098,18 +1112,15 @@ margin-bottom: 20px;
     letter-spacing: 0.48px;
 }
 
-
-
-
-.cubmission-form button {
+.submission-form button {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.9px;
+    line-height: 30px;
     letter-spacing: 0.96px;
     border-radius: 4px;
     background: var(--brand-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
     color: var(--background-color);
     display: flex;
     justify-content: center;
@@ -1119,7 +1130,12 @@ margin-bottom: 20px;
     cursor: pointer;  
 }
 
-.cubmission-form svg 
+.submission-form button:hover,
+.submission-form button:focus {
+    background-color: #188ce8;
+}
+
+.submission-form svg 
 {width: 24px;
 height: 24px;
 fill: #FFF;

@@ -407,7 +407,13 @@ a.nav-header-link
     letter-spacing: 0.12px;
     resize: none;
     height: 96px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.user-comment:hover {
+    border: 1px solid var(--brand-color);
+}
+
 
 textarea::placeholder {
     color: rgba(117, 117, 117, 0.50);
@@ -417,7 +423,7 @@ textarea::placeholder {
 
 
 .form-agreement {
-    width: 425px;
+    /* width: 425px; */
     color: var(--secondary-color);
     font-size: 14px;
     letter-spacing: 0.42px;
@@ -429,20 +435,21 @@ textarea::placeholder {
     margin-bottom: 30px;
 }
 
-.checkbox {
+/* .checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .checkbox:checked + .agreement-vector
-.agreement-vector svg {
+.agreement-vector-icon {
     opacity: 1;
 }
 
 
-.checkbox:checked+.agreement-vector {
+.checkbox:checked + .agreement-vector {
     background-color: var(--brand-color);
+    outline: transparent;
 }
 
 .visualy-hidden {
@@ -465,18 +472,18 @@ textarea::placeholder {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agreement-vector svg {
+.agreement-vector-icon {
     width: 16px;
     height: 15px;
     opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
-
-
 .agreement-text2{
-    color: #2196F3;
-    font-family: Roboto;
+    color: var(--brand-color);
+    font-family: var(--main-font);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

@@ -332,7 +332,8 @@ a.nav-header-link
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sprite-close:hover {
+.modal-btn:hover .sprite-close,
+.modal-btn:focus .sprite-close {
     fill: var(--brand-color);
 }
 
@@ -357,6 +358,34 @@ a.nav-header-link
     background: var(--background-color);
 }
 
+.modal-form input,
+.modal-form textarea {
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form:focus-within svg {
+    fill: #2196f3;
+}
+
+.modal-input-input:focus-visible,
+.modal-user-comment:focus-visible {
+    border-color: #2196f3;
+}
+
+.modal-form:hover textarea,
+.modal-form:focus textarea,
+.modal-form:hover input,
+.modal-form:hover svg,
+.modal-form:focus input,
+.modal-form:focus svg {
+    border-color: #2196f3;
+    fill: #2196f3;
+}
+
+
+
+
 .form-group {
     color: var(--secondary-color);
     font-size: 12px;
@@ -368,21 +397,21 @@ a.nav-header-link
     
 }
 
-.form-input:hover 
+/* .form-input:hover 
    { 
-     fill: var(--brand-color);}
+     fill: var(--brand-color);} */
 
 
-.form-input input:hover {
+/* .form-input input:hover {
     border: 1px solid #2196F3;
-}
+} */
 
 .form-input {
     margin-top: 4px;
     position: relative;
 }
 
-.form-input input {
+.form-input-input {
     width: 448px;
     height: 40px;
     flex-shrink: 0;
@@ -391,7 +420,6 @@ a.nav-header-link
     padding-left: 40px;
     cursor: pointer;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .form-input svg {
@@ -418,9 +446,9 @@ a.nav-header-link
     cursor: pointer;
 }
 
-.user-comment:hover {
+/* .user-comment:hover {
     border: 1px solid var(--brand-color);
-}
+} */
 
 
 textarea::placeholder {

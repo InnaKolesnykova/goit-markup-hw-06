@@ -75,35 +75,35 @@
 
             <!-- Modal Form -->
             <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
-            <form class="modal-form" action="">
-              <label class="form-group" for="">
+            <form class="modal-form">
+              <label class="form-group" for="name">
                 Ім'я
                 <span class="form-input">
-                  <input type="text" name="user-name">
+                  <input type="text" name="user-name" id="user-name">
                   <svg>
                     <use href="sprite.svg#name"></use>
                   </svg>
                 </span>
               </label>
-              <label class="form-group" for="">
+              <label class="form-group" for="phone">
                 Телефон
                 <span class="form-input">
-                  <input type="text" name="user-phone">
+                  <input type="text" name="user-phone" id="user-phone">
                   <svg>
                     <use href="sprite.svg#phone2"></use>
                   </svg>
                 </span>
               </label>
-              <label class="form-group" for="">
+              <label class="form-group" for="email">
                 Пошта
                 <span class="form-input">
-                  <input type="text" name="user-email">
+                  <input type="text" name="user-email" id="user-email">
                   <svg>
                     <use href="sprite.svg#email2"></use>
                   </svg>
                 </span>
               </label>
-              <label class="form-group" for="">
+              <label class="form-group" for="comment">
                 Коментар
                 <span class="form-input"></span>
                 <textarea class="user-comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
@@ -525,10 +525,8 @@
             </button>
             </div>
             </form>
-
-          
         </div>
-      </div>
+      <!-- </div> -->
     </footer>
     <script src="./js/modal.js"></script>
   </body>

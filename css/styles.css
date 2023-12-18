@@ -358,27 +358,27 @@ a.nav-header-link
     background: var(--background-color);
 }
 
-.modal-form input,
-.modal-form textarea {
+.form-group input,
+.form-group textarea {
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form:focus-within svg {
+.form-group:focus-within svg {
     fill: #2196f3;
 }
 
-.modal-input-input:focus-visible,
-.modal-user-comment:focus-visible {
+.form-input-input:focus-visible,
+.user-comment:focus-visible {
     border-color: #2196f3;
 }
 
-.modal-form:hover textarea,
-.modal-form:focus textarea,
-.modal-form:hover input,
-.modal-form:hover svg,
-.modal-form:focus input,
-.modal-form:focus svg {
+.form-group:hover textarea,
+.form-group:focus textarea,
+.form-group:hover input,
+.form-group:hover svg,
+.form-group:focus input,
+.form-group:focus svg {
     border-color: #2196f3;
     fill: #2196f3;
 }
@@ -441,7 +441,7 @@ a.nav-header-link
     color: var(--main-color);
     letter-spacing: 0.12px;
     resize: none;
-    height: 96px;
+    height: 120px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
@@ -471,6 +471,10 @@ textarea::placeholder {
     margin-bottom: 30px;
 }
 
+
+
+
+
 /* .checkbox {
     display: flex;
     align-items: center;
@@ -486,6 +490,10 @@ textarea::placeholder {
 .checkbox:checked + .agreement-vector {
     background-color: var(--brand-color);
     outline: transparent;
+}
+
+.checkbox:focus+.agreement-vector {
+    outline: 2px solid var(--brand-color);
 }
 
 .visualy-hidden {
@@ -1044,7 +1052,7 @@ textarea::placeholder {
 }
 
 .fotter-contacts-list {
-    text-wrap: nowrap;
+    white-space: nowrap;
 
 }
 
@@ -1086,9 +1094,9 @@ textarea::placeholder {
     margin-left: 93px;
 }
 
-.submission-label {
+/* .submission-label {
     width: 100%;
-}
+} */
 
 
 
